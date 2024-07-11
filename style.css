@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+}
+header{
+    /* outline: 5px solid red; */
+    /* background-color: lightblue; */
+    height: 3rem;
+}
+.titlebar{
+    height: 50%;
+    /* outline: 2px solid red; */
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.title_img{
+    /* 2rem -> 60% */
+    height: 70%;
+    margin-left: 0.5rem;
+}
+.title{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.menu_bar{
+    display: flex;
+    gap: 1rem;
+    margin-left: 0.5rem;
+    /* outline: 2px solid green; */
+    /* we need to mention height bcoz div take the size of text */
+    height: 50%;
+    align-items: center;
+}
+.menu{
+    position: relative;
+    /* border: 1px solid red; */
+    display: inline-block;
+}
+.menu-btn{
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.menu-btn:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+.menu-items{
+    background-color: rgb(242, 242, 242);
+    /* border: 2px solid green; */
+    position: absolute;
+    top: 1px;
+    left: 0;
+    /* border:2px solid red; */
+    width: 9rem;
+    display: none;
+    z-index: 1;
+}
+/* popUp */
+.menu:hover .menu-items{
+    display: block;
+}
+li{
+    padding-top: 0.25rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+li:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+.videoInput{
+    display: none;
+}
+/* main element */
+main{
+    height: calc(100vh - 8rem);
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#vlc-icon{
+    height: 125px;
+    display: block;
+}
+.video{
+    height: 100%;
+    width: 100vw;
+    /* border: 2px solid red; */
+}
+
+/* footer */
+footer{
+    height: 5rem;
+    /* background-color: gray; */
+}
+
+.toast{
+    color: white;
+    font-size: 2rem;
+    position: fixed;
+    top: 99px;
+    right: 47px;
+    display: none;
+}
